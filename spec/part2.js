@@ -424,6 +424,7 @@
         // Here, we wrap a dummy function in a spy. A spy is a wrapper function (much like _.memoize
         // or _.once) that keeps track of interesting information about the function it's spying on;
         // e.g. whether or not the function has been called.
+
         var spy = sinon.spy(function() { return 'Dummy output'; });
         var memoSpy = _.memoize(spy);
 
